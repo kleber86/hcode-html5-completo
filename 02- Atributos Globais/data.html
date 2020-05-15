@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02 - Atributos Globais - data </title>
+</head>
+<body>
+  <h1>Atributos Globais - data</h1>
+  
+  <ul>
+    <li data-id="01" data-email="email@email.com.br">Kleber Alves</li>
+    <li data-id="02" data-email="email2@email.com.br">Kleber Nascimento</li>
+  </ul>
+
+  <script>
+    document.querySelectorAll('li').forEach(elementoLi => {
+      console.log(elementoLi.dataset.email)
+    })
+  </script>
+</body>
+</html>
