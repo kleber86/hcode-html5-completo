@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 - tags: video</title>
+  <style>
+    body{
+      margin: 0; padding: 0;
+      background-color:cornflowerblue;
+    }
+    iframe{
+      border: 1px dashed white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tags: video / source </h1>
+  <video src="original.mp4" width="600" controls preload poster="original.jpg"></video>
+
+ <div>
+  <audio controls>
+    <source src="original.mp3" type="audio/mpeg">
+    <source src="original.ogg" type="audio/ogg">
+    </audio>
+ </div>
+
+<div>
+  <picture>
+    <source srcset="logo256.png" media="(min-width: 256px)">
+   <img src="logo64.png" alt="logo hcode">
+  </picture>
+</div>
+
+  <div>
+    <video src="original.mp4" controls width="600">
+      <track src="original_pt.vtt" label="Português" king="subtitles" srclang="pt">
+        <track src="original_jp.vtt" label="Japonês" king="subtitles" srclang="jp">
+    </video>
+  </div>
+
+</body>
+</html>
