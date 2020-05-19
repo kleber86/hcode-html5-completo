@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 - tags: map / area / abbr / b / bdi / bdo / blockquote / q / br / wbr / cite </title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <img src="logo.png" alt="logo" usemap="#mapa-logo">
+      <map name="mapa-logo">
+        <area shape="circle" coords="211,263,15" href="http://www.github.com/kleber86" alt="Olho esquerdo">
+        <area shape="circle" coords="301,263,15" href="http://www.github.com/kleber86" alt="Olho direito">
+      </map>
+    </section>
+
+    <section>
+      <p>Lorem <abbr title="Pernambuco">PE</abbr> dolor, sit amet consectetur adipisicing elit. Porro, molestiae. Esse vel unde ex? Beatae dignissimos quidem dolorem, facilis cupiditate ipsam accusantium eligendi ullam enim tenetur assumenda ex officiis molestias.</p>
+    </section>
+
+    <section>
+      <b>Texto em negrito, o uso não tem peso semântico.</b>
+    </section>
+
+    <section>
+      <h2>bdi</h2>
+      <ol>
+        <li><bdi>Kleber</bdi></li>
+        <li><bdi>Alves</bdi></li>
+        <li><bdi>Amorim</bdi></li>
+        <li><bdi>Nascimento</bdi></li>
+        <li><bdi>クレベール</bdi></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>bdo</h2>
+      <bdo dir="ltr">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, id, at, beatae sequi reprehenderit tenetur assumenda dignissimos nam vel corrupti suscipit tempora animi. Aut incidunt tempore laborum magni, quia assumenda?</p>
+      </bdo>
+      <bdo dir="rtl">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum nostrum dignissimos ea, laboriosam voluptates est corrupti quae ab. Dolorem reprehenderit totam voluptates est ad eaque exercitationem odit dolore alias.</p>
+      </bdo>
+    </section>
+
+    <section>
+      <h2>blockquote</h2>
+      <blockquote cite="https://pt.wikipedia.org/wiki/HTML">
+        HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa Linguagem de Marcação de Hipertexto) é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+      </blockquote>
+    </section>
+    <section>
+      <h2>q</h2>
+      <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla explicabo hic debitis corrupti, natus pariatur magnam expedita accusantium quae soluta rerum repellat. Iure fuga vitae nesciunt repellat obcaecati ipsam ea?</q>
+    </section>
+    <section>
+      <h2>br</h2>
+      texto <br>
+      usando <br>
+      para <br>
+      quebra <br>
+      de linha
+    </section>
+    <section>
+      <h2>wbr</h2>
+      <p>Texto com uma possivel<wbr> quebra de linha </p>
+    </section>
+
+    <section>
+      <h2>cite</h2>
+      <p>
+        <cite>Viagdores: Endgame</cite> é um filme de 2019...
+      </p>
+    </section>
+  </main>
+</body>
+</html>
