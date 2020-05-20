@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>03 - tags: optgroup / datalist / textarea / dialog / output </title>
+  <title>03 - tags: optgroup / datalist / textarea / dialog / output / meter / progress / canvas / svg / marquee</title>
 
 </head>
 <body>
@@ -62,6 +62,57 @@
             <output name="c" for="a b">0</output>
         </form>
     </section>
+
+    <hr>
+
+    <section>
+        <h2>meter</h2>
+        <meter min="0" max="100" value="30" low="40">30 de 100</meter>
+        <meter min="0" max="100" value="90" high="90">90 de 100</meter>
+
+        <h2>progress</h2>
+        <progress value="50" max="100"></progress>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>canvas</h2>
+        <canvas id="quadro"></canvas>
+    </section>
+
+    <hr>
+    <section>
+        <h2>svg</h2>
+        <svg width="800" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-witdh="4" fill="gray">
+        </svg>
+    </section>
+    <hr>
+    <section>
+        <h2>hgroup</h2>
+        <hgroup>
+            <h1>titulo 1</h1>
+            <h2>titulo 2</h2>
+        </hgroup>
+    </section>
+
+    <hr>
+    <section>
+        <h2>marquee</h2>
+        <marquee direction="up">Kleber Alves de Amorim</marquee>
+        <marquee direction="down">Kleber Alves de Amorim</marquee>
+        <marquee direction="left">Kleber Alves de Amorim</marquee>
+        <marquee direction="right">Kleber Alves de Amorim</marquee>
+    </section>
   </main>
+
+  <script>
+      const quadro = document.querySelector("#quadro")
+      const contexto = quadro.getContext('2d')
+
+      contexto.fillStyle = "#FF0000"
+      contexto.fillRect(0, 0, 100, 100)
+  </script>
 </body>
 </html>
