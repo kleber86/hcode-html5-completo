@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 - tags: data / del / ins / dfn / em / hr / i / kbd / mark / ruby / rp / rt / </title>
+  <style>
+    hr{
+      border: 0.1px solid rgb(214, 214, 214);
+    }
+    kbd{
+      background-color: #eee;
+      border-radius: 2px;
+      color: #333;
+      display: inline-block;
+      padding: 2px 4px;
+    }
+    mark{
+      background-color: #eee;
+      padding: 2px 6px;
+    }
+    ruby{
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <h2>data</h2>
+      <data value="1">Camiseta P</data>
+      <data value="2">Camiseta M</data>
+      <data value="3">Camiseta G</data>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>del / ins </h2>
+      <p>
+        <del cite="https://www.github.com/kleber86" datetime="2020-01-01 19:00">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos tempora quasi consequatur consequuntur sint perspiciatis neque nesciunt et aspernatur, minima recusandae iste dolores sequi cupiditate voluptate porro. Dicta, consectetur blanditiis?</del>
+      </p>
+      <p>
+        <ins cite="https://www.github.com/kleber86" datetime="2020-01-01 20:00">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum tempora fuga cum ullam et impedit omnis, quaerat molestiae quis asperiores eligendi totam quos ex vero hic delectus, modi dolor fugiat.</ins>
+      </p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>dfn / em / i </h2>
+      <p>
+        <dfn>HTML</dfn> é uma linguagem de marcação...
+      </p>
+      <em>Texto em ênfase com peso semântico</em>
+      <p>
+        Lorem ipsum dolor sit amet, <i title="tag i">consectetur</i> adipisicing elit. Aut eum velit deserunt iure. Maxime voluptas alias repudiandae amet sint magni debitis quod commodi quaerat earum dolores, vitae blanditiis harum provident!
+      </p>
+    </section>
+    
+    <hr>
+
+    <section>
+      <h2>kbd</h2>
+      <p>Use o <kbd>CTRL + C<kbd></p>
+      <h2>mark</h2>
+      <p><mark>Lorem ipsum dolor</mark>, sit amet consectetur adipisicing elit. Nihil maiores atque tenetur voluptas officiis similique quidem inventore hic sequi! <mark>Enim quam laudantium</mark> aliquid. Ipsam cum obcaecati quod nostrum voluptate officia.</p>
+    </section>
+
+    <section>
+      <h2>ruby</h2>
+      <p>
+        <ruby>
+          明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+        </ruby>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
