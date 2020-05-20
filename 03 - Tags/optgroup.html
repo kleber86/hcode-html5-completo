@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 - tags: optgroup / datalist / textarea / dialog / output </title>
+
+</head>
+<body>
+  <main>
+    <section>
+      <select>
+          <optgroup label="Front-End">
+              <option>HTML</option>
+              <option>CSS3</option>
+          </optgroup>
+          <optgroup label="Back-End">
+            <option>Ruby</option>
+            <option>Java</option>
+        </optgroup>
+      </select>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>datalist</h2>
+        <input type="text" list="lista">
+        <datalist id="lista">
+            <option>html</option>
+            <option>javascript</option>
+            <option>bootstrap</option>
+        </datalist>
+    </section>
+    <hr>
+
+    <section>
+        <h2>textarea</h2>
+        <textarea autofocus cols="100" rows="5"></textarea>
+    </section>
+    <hr>
+
+    <section>
+        <h2>dialog</h2>
+        <dialog>
+            Hcode
+        </dialog>
+        <dialog open>
+            hcode
+        </dialog>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>output</h2>
+        <form oninput="c.value = parseInt(a.value) + parseInt(b.value)">
+            <input type="range" id="a" min="0" max="10" value="0">
+            +
+            <input type="number" id="b" value="0">
+            =
+            <output name="c" for="a b">0</output>
+        </form>
+    </section>
+  </main>
+</body>
+</html>
