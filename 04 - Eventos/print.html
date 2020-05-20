@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 - Eventos: afterprint / beforeprint </title>
+</head>
+<body onbeforeunload="debug(event)">
+
+  <header>
+    <h1>Eventos</h1>
+  </header>
+
+  <main>
+    <h2>afterprint / beforeprint</h2>
+    <samp>
+      onbeforeprint="debug(event)" onafterprint="debug(event)
+    </samp>
+  </main>
+  
+  <script>
+    function debug(e){
+      alert('Evento: ' + e.type)
+    }
+  </script>
+</body>
+</html>
