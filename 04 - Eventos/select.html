@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>04 - Eventos: select / submit / keydown / keypress / keyup / click / dblclick / mousedown / mousemove </title>
+  <title>04 - Eventos: select / submit / keydown / keypress / keyup / click / dblclick / mousedown / mousemove / mouseout / mouseup / mouseover / mousewheel / mouseenter mouseleave</title>
 
   <style>
     #box{
@@ -97,6 +97,69 @@
       <form>
         <div id="box" onmousemove="debug(event)">
 
+        </div>
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>mouseout</h2>
+      <form>
+        <div id="box" onmouseout="debug(event)">
+
+        </div>
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>mouseover</h2>
+      <form>
+        <div id="box" onmouseover="debug(event)">
+
+        </div>
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>mouseup</h2>
+      <form>
+        <div id="box" onmouseup="debug(event)">
+
+        </div>
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>mousewheel</h2>
+      <form>
+        <div id="box" onmousewheel="debug(event)">
+        </div>
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>mouseenter</h2>
+      <form>
+        <div id="box" onmouseenter="debug(event)">
+        </div>
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>mouseleave</h2>
+      <form>
+        <div id="box" onmouseleave="debug(event)">
         </div>
       </form>
     </section>
