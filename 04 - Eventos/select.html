@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 - Eventos: select / submit / keydown / keypress / keyup / click / dblclick / mousedown / mousemove </title>
+
+  <style>
+    #box{
+      width: 500px;
+      height: 100px;
+      background-color: burlywood;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Eventos</h1>
+  </header>
+  <main>
+    <section>
+      <h2>select</h2>
+     <form>
+       <input type="search" onselect="debug(event)">
+     </form>
+    </section>
+ 
+    <hr>
+ 
+    <section>
+      <h2>submit</h2>
+      <form onsubmit="debug(event)">
+        <input type="text" name="" id="">
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+ 
+    <hr>
+ 
+    <section>
+      <h2>keydown</h2>
+      <form onkeydown="debug(event)">
+        <input type="text" name="" id="">
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>keypress</h2>
+      <form onkeypress="debug(event)">
+        <input type="text" name="" id="">
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>keyup</h2>
+      <form onkeyup="debug(event)">
+        <input type="text" name="" id="">
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>click</h2>
+      <form onclick="debug(event)">
+        <input type="submit">
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>dblclick</h2>
+      <form">
+        <input type="submit" ondblclick="debug(event)">
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>mousedown</h2>
+      <form">
+        <input type="submit" onmousedown="debug(event)">
+      </form>
+    </section>
+
+    <hr>
+ 
+    <section>
+      <h2>mousemove</h2>
+      <form>
+        <div id="box" onmousemove="debug(event)">
+
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  
+  <script>
+    function debug(e){
+      console.log('Evento: ' + e.type)
+      //return 'Evento: ' + e.type
+    }
+  </script>
+</body>
+</html>
