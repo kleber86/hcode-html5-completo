@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 - Eventos: focus</title>
+</head>
+<body>
+
+  <header>
+    <h1>Eventos</h1>
+    <input type="text" onfocus="debug(event)">
+  </header>
+
+  
+  <script>
+    function debug(e){
+      console.log('Evento: ' + e.type)
+      //return 'Evento: ' + e.type
+    }
+  </script>
+</body>
+</html>

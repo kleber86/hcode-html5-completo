@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 - Eventos: invalid</title>
+</head>
+<body>
+
+  <header>
+    <h1>Eventos</h1>
+    <form>
+      <input type="email" oninvalid="debug(event)">
+      <button type="submit">Enviar</button>
+    </form>
+  </header>
+
+  
+  <script>
+    function debug(e){
+      console.log('Evento: ' + e.type)
+      //return 'Evento: ' + e.type
+    }
+  </script>
+</body>
+</html>
