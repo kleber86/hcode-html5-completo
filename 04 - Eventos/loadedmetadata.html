@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 - Eventos: loadedmetadata / loadstart / pause / play / playing / progress / ratechange / seeked / seeking / stalled / suspend / timeupdate / volumechange / waiting / toggle</title>
+</head>
+<body>
+
+  <header>
+    <h1>Eventos</h1>
+  </header>
+
+  <section>
+    <h2>loadedmetadata / loadstart / pause / play / playing / progress / ratechange / seeked / seeking / stalled / suspend / timeupdate / volumechange / waiting / toggle</h2>
+    <select onchange="setRate(event)">
+      <option>0.25</option>
+      <option>0.5</option>
+      <option>0.75</option>
+      <option selected>1</option>
+      <option>1.25</option>
+      <option>1.50</option>
+    </select>
+    <video width="80%" controls 
+    onloadeddata="debug(event)"
+    onloadedmetadata="debug(event)"
+    onloadstart="debug(event)"
+    onpause="debug(event)"
+    onplay="debug(event)"
+    onplaying="debug(event)"
+    onprogress="debug(event)"
+    onratechange="debug(event)"
+    onseeked="debug(event)"
+    onseeking="debug(event)"
+    onstalled="debug(event)"
+    onsuspend="debug(event)"
+    ontimeupdate="debug(event)"
+    onvolumechange="debug(event)"
+    onwaiting="debug(event)"
+    src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4">
+    <track src="original_pt.vtt" label="PT_BR" kind="subtitles" srclang="pt" default>
+  </video>
+  </section>
+
+  <section>
+    <h2>toggle</h2>
+    <details ontoggle="debug(event)">
+      <summary>Hcode</summary>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt mollitia repellendus eaque laudantium dolorem praesentium illo hic molestias neque, corporis alias beatae quas ad quaerat ipsa a sint. Rem!</p>
+
+    </details>
+  </section>
+  <script>
+    function debug(e){
+      console.log('Evento: ' + e.type)
+    }
+
+    function setRate(e){
+      const videoEl = document.querySelector('video')
+      const value = e.target.value
+
+      videoEl.playbackRate = parseFloat(value)
+      console.log(e.target.value)
+    }
+  </script>
+</body>
+</html>
