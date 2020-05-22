@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 - Eventos: scroll / copy / cut / paste </title>
+</head>
+<body onscroll="debug(event)">
+
+  <header>
+    <h1>Eventos</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>scroll</h2>
+    </section>
+
+    <section>
+      <h2>copy</h2>
+      <p oncopy="debug(event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptas autem? At, molestias debitis possimus eos hic temporibus minima corporis autem dicta quasi perspiciatis accusamus velit blanditiis. Perspiciatis, rem suscipit?</p>
+    </section>
+
+    <section>
+    <h2>cut / paste </h2>
+    <p oncut="debug(event)" onpaste="debug(event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptas autem? At, molestias debitis possimus eos hic temporibus minima corporis autem dicta quasi perspiciatis accusamus velit blanditiis. Perspiciatis, rem suscipit?</p>
+
+    <textarea oncut="debug(event)" onpaste="debug(event)" cols="800" rows="5"></textarea>
+  </section>
+  </main>
+  
+  <script>
+    function debug(e){
+      console.log('Evento: ' + e.type)
+    }
+  </script>
+</body>
+</html>
