@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 - Eventos: drag / dragred / dragenter / dragleave / dragover / dragstart / drop </title>
+</head>
+<style>
+  div{
+    width: 200px;
+    height: 200px;
+    background-color: #e1e1e1;
+  }
+  .target{
+    width: 200px;
+    height: 200px;
+    background-color: #333333;
+  }
+</style>
+<body>
+
+  <header>
+    <h1>Eventos</h1>
+  </header>
+
+  <main>
+   <section>
+     <h2>drag</h2>
+     <div ondrag="debug(event)" draggable="true"></div>
+   </section>
+
+    <section>
+      <h2>dragred</h2>
+      <div ondrag="debug(event)" ondragend="debug(event)" draggable="true"></div>
+    </section>
+
+    <section>
+      <h2>dragenter / dragleave / dragover </h2>
+      <div ondragend="debug(event)" draggable="true"></div>
+
+      <div class="target" ondragenter="debug(event)" ondragleave="debug(event)" ondragover="debug(event)"></div>
+    </section>
+
+    <section>
+      <h2>dragstart </h2>
+      <div ondragstart="debug(event)" draggable="true"></div>
+
+      <div class="target" ondragenter="debug(event)" ondragleave="debug(event)" ondragover="cancel(event)" ondrop="debug(event)"></div>
+    </section>
+  </main>
+  
+  <script>
+    function cancel(e) {
+      e.preventDefault()
+    }
+    function debug(e){
+      console.log('Evento: ' + e.type)
+    }
+  </script>
+</body>
+</html>
