@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 - Eventos: abort / canplay / canplaytrough / cuechange / durationchange / emptied / ended / error / loadeddata </title>
+</head>
+<body>
+
+  <header>
+    <h1>Eventos</h1>
+  </header>
+
+  <section>
+    <h2>abort / canplay / canplaytrough / cuechange / durationchange / emptied / ended / error / loadeddata</h2>
+    <video width="80%" controls 
+    oncanplay="debug(event)"
+    oncanplaythrough="debug(event)"
+    ondurationchange="debug(event)"
+    onemptied="debug(event)"
+    onended="debug(event)"
+    onerror="debug(event)"
+    onloadeddata="debug(event)"
+    src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4">
+    <track src="original_pt.vtt" label="PT_BR" kind="subtitles" srclang="pt" default oncuechange="debug(event)">
+  </video>
+  </section>
+  <script>
+    function debug(e){
+      console.log('Evento: ' + e.type)
+    }
+  </script>
+</body>
+</html>
