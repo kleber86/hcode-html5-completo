@@ -31,6 +31,7 @@ body{
   margin: 5px 0;
   border: none;
   outline: none;
+  font-size: 1.1em;
 }
 .content-center input{
   border-bottom-color: #CCC;
@@ -43,6 +44,7 @@ body{
 .content-center button{
   background-color: #d07335;
   color: #FFF;
+  font-size: 1.3em;
 }
 .content-center button:hover{
   background-color: #b55b28;
