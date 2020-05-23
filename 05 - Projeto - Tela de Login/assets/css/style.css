@@ -9,6 +9,9 @@ body{
   max-width: 300px;
   margin: auto;
   padding: 20px;
+  background-color: #FFF;
+  border-radius: 10px;
+  
 }
 .content-center .text-center{
   text-align: center;
@@ -25,4 +28,11 @@ body{
   width: 100%;
   padding: 10px 5px;
   margin: 5px 0;
+  border: none;
+  outline: none;
+}
+.content-center input{
+  border-bottom-color: #CCC;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
