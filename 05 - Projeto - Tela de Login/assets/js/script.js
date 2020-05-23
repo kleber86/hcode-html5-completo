@@ -13,3 +13,20 @@ console.log(`
   Email: ${email}
   Github: ${github}
   `)
+
+  document.getElementById('btn-submit').addEventListener('click', e =>{
+    console.log('Clique no botão')
+  })
+
+  document.getElementById('form-login').addEventListener('mouseenter', e =>{
+    console.log('O mouse está sobre o formulário.')
+  })
+
+  document.querySelector('#form-login').addEventListener('mouseleave', e => {
+    console.log('O mouse saiu do formuário.')
+  })
+
+  document.querySelector('#form-login').addEventListener('submit', e => {
+    e.preventDefault()
+    console.warn('Formulário enviado com sucesso!')
+  })
