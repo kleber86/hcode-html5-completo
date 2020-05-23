@@ -35,4 +35,13 @@ console.log(`
       email: ${email}
       senha: ${password}
     `)
+
+    let objeto = {
+      email,
+      password
+    }
+    console.log(objeto)
+
+    let stringJson = JSON.stringify(objeto)
+    console.log(stringJson)
   })
