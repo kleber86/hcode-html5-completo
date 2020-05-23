@@ -31,17 +31,18 @@ console.log(`
     let email = document.querySelector('#email').value
     let password = document.querySelector('#password').value
 
-    console.log(`
-      email: ${email}
-      senha: ${password}
-    `)
-
     let objeto = {
       email,
       password
     }
-    console.log(objeto)
-
-    let stringJson = JSON.stringify(objeto)
-    console.log(stringJson)
+    if(!objeto.email){
+      console.error('Digite seu email.')
+    } else if(!objeto.password){
+      console.error('Digite sua senha.')
+    }else{
+      console.log(`
+      email: ${email}
+      senha: ${password}
+    `)
+    }
   })
