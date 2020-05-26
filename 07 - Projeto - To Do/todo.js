@@ -20,7 +20,7 @@ function renderTodo(){
         })
         
         li.querySelector('button').addEventListener('click', e=> {
-            console.warn('deletar?')
+            console.dir(e.target.parentNode.querySelector('input ').id.split('-')[1])
         })
 
         document.querySelector('.todo').append(li)
